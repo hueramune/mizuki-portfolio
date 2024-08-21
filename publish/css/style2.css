@@ -73,6 +73,7 @@
 
 html {
     font-size: 62.5%;
+    text-align: center;
 }
 
 body {
@@ -83,6 +84,7 @@ body {
 img {
     max-width: 100%;
     height: auto;
+    align-items: center;
 }
 
 .frame {
@@ -120,6 +122,8 @@ img {
 .top-nav-menu nav ul li {
     float: left;
     padding-left: 5px;
+    list-style: none;
+
 }
 
 .top-nav-menu nav ul li a i {
@@ -302,9 +306,9 @@ img {
 }
 
 #profile-img {
-    width: 200px;
-    height: 200px;
-    float: left;
+    width: auto;
+    height: auto;
+    text-align: center;
 }
 
 #profile-sentence {
@@ -323,40 +327,6 @@ img {
     font-size: 1.5rem;
     margin-bottom: 15px;
 }
-
-#line-box {
-    margin: 0 auto;
-    width: 100%;
-}
-
-#line-img {
-    text-align: center;
-}
-
-#line-description {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-#line-stamp-link {
-    border: 3px solid #50d650;
-    background-color: #50d650;
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
-    padding: 2px 6px;
-    text-decoration: none;
-    transition: .4s;
-}
-
-#line-stamp-link:hover {
-    border: 3px solid #50d650;
-    background-color: #fff;
-    color: #50d650;
-    transition: .4s;
-}
-
 
 /*about----------------------------------end*/
 
@@ -803,7 +773,7 @@ footer {
 
 body {
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #fff;
 }
 
 svg {
@@ -891,8 +861,9 @@ svg {
     }
     #about-set {
         padding: 0;
-        margin: 0;
+        margin: 20px 20px 0 20px;
         max-width: 100%;
+        overflow: hidden;
     }
     #return-button {
         width: 50%;
@@ -930,3 +901,4 @@ svg {
         line-height: 2rem;
     }
 }
+
