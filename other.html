@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="ja" prefix="og:http://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>mizuki-portfolio</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="colorbox.css">
+
+
+    <link rel="apple-touch-icon" sizes="192x192" href="touch-icon.png">
+    <link rel="icon" href="favicon.ico">
+
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
+
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script src="jquery.colorbox-min.js"></script>
+    <script>
+        $(function() {
+            // #で始まるアンカーをクリックした場合に処理
+            $('a[href^=#]').click(function() {
+                // スクロールの速度
+                var speed = 800; // ミリ秒
+                // アンカーの値取得
+                var href = $(this).attr("href");
+                // 移動先を取得
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                // 移動先を数値で取得
+                var position = target.offset().top;
+                // スムーススクロール
+                $('body,html').animate({
+                    scrollTop: position
+                }, speed, 'swing');
+                return false;
+            });
+        });
+
+    </script>
+    <script>
+        $(function() {
+            $(".img_box").colorbox({
+                scalePhotos: true,
+                opacity: 0.7,
+                maxWidth: "90%",
+                maxHeight: "100%"
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <header id="works-page-menu">
+        <div id="works-page-menu-container">
+            <div id="return-button"><a href="index2.html"><i class="fas fa-angle-left"></i>&nbsp;<span>Return</span></a></div>
+            <div class="works-page-button"><a class="yajirusi" href="#main-container">Web</a></div>
+            <div class="works-page-button"><a class="yajirusi" href="#banner-container">Other</a></div>
+        </div>
+    </header>
+
+    <div class="frame" id="woks-page-back">
+
+        <main id="main-container">
+            <h1 class="title-name">Web</h1>
+
+            <div class="works-page-container">
+                <div class="works-page-box1">
+                    <div class="work-set">
+                        <div class="works-images-box">
+                            <div class="box">
+                                <a href="images/greedy_bs1.png" class="img_box" rel="woks"><img src="images/greedy_bs1.png" alt="bs-image"></a>
+                            </div>
+                            <div class="box2">
+                                <a href="images/greedy_bs2.png" class="img_box" rel="woks"><img src="images/greedy_bs2.png" alt="bs-image2"></a>
+                            </div>
+                            <div class="box">
+                                <a href="images/greedy_bs3.png" class="img_box" rel="woks"><img src="images/greedy_bs3.png" alt="bs-image3"></a>
+                            </div>
+                            <div class="box2">
+                                <a href="images/greedy_bs4.png" class="img_box" rel="woks"><img src="images/greedy_bs4.png" alt="bs-image4"></a>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <h2 class="work-name">greedy</h2>
+                            <p class="small-descripton">design/illustrator/photoshop<br class="br-sp2">/html/css/bootstrap</p>
+                            <p>Bootstrapを使ったサイトが作ってみたいと思い、自分のポートフォリオサイトを練習で制作しました。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="works-page-box2">
+                    <div class="work-set">
+                        <div class="works-images-box">
+                            <div class="box">
+                                <a href="images/travel2.png" class="img_box" rel="woks"><img src="images/travel2.png" alt="travel-image1"></a>
+                            </div>
+                            <div class="box2">
+                                <a href="images/travel1.png" class="img_box" rel="woks"><img src="images/travel1.png" alt="travel-image2"></a>
+                            </div>
+                            <div class="box">
+                                <a href="images/travel3.png" class="img_box" rel="woks"><img src="images/travel3.png" alt="travel-image3"></a>
+                            </div>
+                            <div class="box2">
+                                <a href="images/iphone-travel.png" class="img_box" rel="woks"><img src="images/iphone-travel.png" alt="travel-image4"></a>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <h2 class="work-name">Travel&nbsp;Sketch</h2>
+                            <p class="small-descripton">wordpress/html/css</p>
+                            <p>架空のブログサイトをワードプレスの練習の為、制作しました。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="works-page-container">
+                <div class="works-page-box1">
+                    <div class="work-set">
+                        <div class="works-images-box">
+                            <div class="box">
+                                <a href="images/zoo1.png" class="img_box" rel="woks"><img src="images/zoo1.png" alt="zoo-image1"></a>
+                            </div>
+                            <div class="box2">
+                                <a href="images/zoo2.png" class="img_box" rel="woks"><img src="images/zoo2.png" alt="zoo-image2"></a>
+                            </div>
+                            <div class="box">
+                                <a href="images/zoo3.png" class="img_box" rel="woks"><img src="images/zoo3.png" alt="zoo-image3"></a>
+                            </div>
+                            <div class="box2">
+                                <a href="images/zoo4.png" class="img_box" rel="woks"><img src="images/zoo4.png" alt="zoo-image4"></a>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <h2 class="work-name">ZOOLOGICAL</h2>
+                            <p class="small-descripton">html/css</p>
+                            <p>架空の動物園のサイトをコーディングの練習の為、制作しました。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="works-page-box2">
+                    <div class="work-set">
+                        <div class="works-images-box">
+                            <div class="box">
+                                <a href="images/fruveg1.png" class="img_box" rel="woks"><img src="images/fruveg1.png" alt="fruveg-image1"></a>
+                            </div>
+                            <div class="box2">
+                                <a href="images/fruveg2.png" class="img_box" rel="woks"><img src="images/fruveg2.png" alt="fruveg-image2"></a>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <h2 class="work-name">フルベジ</h2>
+                            <p class="small-descripton">design/illustrator/photoshop/html/css</p>
+                            <p>架空の企業のサイトをコーディングの練習の為、制作しました。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="title-name">Other</h2>
+            <div id="banner-container">
+                <div class="work-set">
+                    <div class="works-images-box">
+                        <div class="box">
+                            <a href="img/Group 4.png" class="img_box" rel="woks"><img src="img/Group 4.png" alt="banner-image1"></a>
+                        </div>
+                        <div class="box2">
+                            <a href="img/Group 5.png" class="img_box" rel="woks"><img src="img/Group 5.png" alt="banner-image2"></a>
+                        </div>
+                        <div class="box">
+                            <a href="img/Group 6.png" class="img_box" rel="woks"><img src="img/Group 6.png" alt="banner-image3"></a>
+                        </div>
+                        <div class="box2">
+                            <a href="img/hello.png" class="img_box" rel="woks"><img src="img/hello.png" alt="banner-image4"></a>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <h2 class="work-name">banner/card</h2>
+                        <p class="small-descripton">design/illustrator/photoshop</p>
+                        <p>架空の英会話教室のバナー、架空のウェルカムボード制作会社のバナー、自分の名刺をオリジナルでデザインしました。</p>
+                    </div>
+                </div>
+                <div class="work-set">
+                    <div class="works-images-box">
+                        <div class="box">
+                            <a href="images/mine1.png" class="img_box" rel="woks"><img src="images/mine1.png" alt="my-image1"></a>
+                        </div>
+                        <div class="box2">
+                            <a href="images/mine3.png" class="img_box" rel="woks"><img src="images/mine3.png" alt="my-image2"></a>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <h2 class="work-name">Drawing</h2>
+                        <p>趣味で描いたものです。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll">
+                <a href="#main-container">Page&nbsp;Top&nbsp;<i class="fas fa-angle-up"></i></a>
+            </div>
+        </main>
+
+            </div>
+    <footer>
+        <p id="copyright">Copyright&copy;&nbsp;2018&nbsp;chinatsu&nbsp;portfolio</p>
+    </footer>
+</body>
+
+</html>

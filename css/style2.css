@@ -1,0 +1,932 @@
+@charset "utf-8";
+
+/*svg--------------------------------------*/
+
+@keyframes STROKE {
+    0% {
+        stroke-dashoffset: 2000;
+        fill: rgba(0, 0, 0, 0);
+    }
+    50% {
+        stroke-dashoffset: 1500;
+    }
+    95% {
+        stroke-dashoffset: 1000;
+        fill: rgba(0, 0, 0, 0);
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: rgba(0, 0, 0, 1);
+    }
+}
+
+.st0 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: STROKE 4s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+
+/*c-green*/
+
+@keyframes STROKE1 {
+    0% {
+        stroke-dashoffset: 2000;
+        fill: rgba(0, 0, 0, 0);
+    }
+    90% {
+        stroke-dashoffset: 1000;
+        fill: rgba(0, 0, 0, 0);
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: #FF9C9D;
+    }
+}
+
+.st1 {
+    fill: none;
+    stroke: #FF9C9D;
+    stroke-width: 2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: STROKE1 4s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#top-title-svg {
+    margin-top: 110px;
+    margin-bottom: 70px;
+    max-width: 80%
+}
+
+
+/*svg------------------------------------end*/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0 auto;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.frame {
+    border-left: 65px solid #eee;
+    border-right: 65px solid #eee;
+    margin: 0;
+    padding: 20px;
+    max-width: 100%;
+}
+
+
+/*header------------------------------------*/
+
+.top-nav-menu {
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    top: 0;
+    height: 65px;
+    line-height: 65px;
+    background-color: #eee;
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+.top-nav-menu nav {
+    overflow: hidden;
+    width: 100%;
+}
+
+.top-nav-menu nav ul {
+    overflow: hidden;
+    float: right;
+}
+
+.top-nav-menu nav ul li {
+    float: left;
+    padding-left: 5px;
+}
+
+.top-nav-menu nav ul li a i {
+    display: none;
+}
+
+.top-nav-menu nav ul li a i:hover {
+    color: #953ed4;
+}
+
+.top-nav-menu nav ul li a {
+    text-decoration: none;
+    font-size: 1.9rem;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+}
+
+.top-nav-menu nav ul li a:hover {
+    color: #4e188d;
+}
+
+.yajirusi {
+    position: relative;
+    display: inline-block;
+    padding: 0 1.8em 0 0;
+}
+
+.yajirusi::after {
+    position: absolute;
+    top: 50%;
+    right: .8em;
+    content: '';
+    margin-top: -5px;
+    border: 7px solid transparent;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-left-color: #4e188d;
+    opacity: 0;
+}
+
+.yajirusi:hover::after {
+    animation: arrow 1.2s infinite;
+}
+
+@keyframes arrow {
+    50% {
+        right: .2em;
+        opacity: 1;
+    }
+    100% {
+        right: -.4em;
+        opacity: 0;
+    }
+}
+
+
+/*header--------------------------------end*/
+
+/*scroll-----------------------------------*/
+
+.scroll {
+    border: 3px solid #000;
+    font-size: 2.2rem;
+    font-family: 'Maven Pro', sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    max-width: 250px;
+    margin-top: 40px;
+}
+
+.scroll a {
+    color: #000;
+    text-decoration: none;
+}
+
+.scroll a:hover {
+    color: #51109e;
+}
+
+
+/*scroll--------------------------------end*/
+
+/*main-------------------------------------*/
+
+.img_box {
+    color: #000;
+}
+
+#main-container {
+    margin: 200px auto 0;
+    max-width: 100%;
+    padding: 5px;
+}
+
+.title-name {
+    color: #272727;
+    font-size: 3.7rem;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.title-name-works {
+    padding-left: 40px;
+}
+
+.work-set {
+    margin: 0 auto 60px;
+    padding: 20px;
+}
+
+.works-images-box {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.box {
+    border: 1px solid #ccc;
+    height: auto;
+    margin: 10px;
+    width: 47%;
+    float: left;
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+.box2 {
+    height: auto;
+    border: 1px solid #ccc;
+    margin: 10px;
+    width: 47%;
+    float: right;
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+.work-name {
+    border-bottom: 1.5px solid #505050;
+    margin-bottom: 7px;
+    color: #333;
+    font-size: 2.6rem;
+    font-family: 'Sawarabi Gothic', 'Yu Gothic UI', YuGothic, 'Yu Gothic', 'ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', sans-serif;
+}
+
+.description p {
+    color: #333;
+    font-size: 1.7rem;
+    font-family: 'Sawarabi Gothic', 'Yu Gothic UI', YuGothic, 'Yu Gothic', 'ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', sans-serif;
+    text-align: left;
+}
+
+.weblink {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #5b3b8e;
+}
+
+.weblink:hover {
+    color: #47ea47;
+    text-decoration: underline;
+}
+/* .animate-once {
+    animation: draw 5s linear 1 forwards;
+} */
+
+
+/*main-----------------------------------end*/
+
+/*about-------------------------------------*/
+
+#about-container {
+    margin: 160px auto 100px;
+    max-width: 100%;
+    padding: 5px;
+}
+
+#about-set {
+    margin: 0 auto;
+    max-width: 60%;
+    padding: 20px 20px 0 20px;
+    overflow: hidden;
+}
+
+#profile-img {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+#profile-sentence {
+    color: #333;
+    float: right;
+    margin: 10px auto;
+    font-family: 'Sawarabi Gothic', 'Yu Gothic UI', YuGothic, 'Yu Gothic', 'ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', sans-serif;
+}
+
+#my-name {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.profile-description {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+#line-box {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#line-img {
+    text-align: center;
+}
+
+#line-description {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#line-stamp-link {
+    border: 3px solid #50d650;
+    background-color: #50d650;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    padding: 2px 6px;
+    text-decoration: none;
+    transition: .4s;
+}
+
+#line-stamp-link:hover {
+    border: 3px solid #50d650;
+    background-color: #fff;
+    color: #50d650;
+    transition: .4s;
+}
+
+
+/*about----------------------------------end*/
+
+/*contact-----------------------------------*/
+
+#contact-container {
+    margin: 100px auto 100px;
+    max-width: 100%;
+    padding: 5px;
+}
+
+#contact-set {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 400px;
+}
+
+.form-text {
+    color: #141414;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 3px;
+}
+
+.sub-text {
+    color: #333;
+    font-size: 1.4rem;
+    font-family: 'Sawarabi Gothic', 'Yu Gothic UI', YuGothic, 'Yu Gothic', 'ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', sans-serif;
+}
+
+.required-text {
+    background-color: rgba(255, 0, 0, 0.2);
+    border-radius: 5%;
+    color: #141414;
+    font-size: 1.4rem;
+    font-family: 'Sawarabi Gothic', 'Yu Gothic UI', YuGothic, 'Yu Gothic', 'ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', sans-serif;
+    padding: 1px;
+}
+
+input {
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-bottom: 15px;
+    height: 25px;
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 2px;
+}
+
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 150px;
+    font-size: 1.4rem;
+    padding: 2px;
+}
+
+#submit_button {
+    border: 3px solid #000;
+    background-color: #fff;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 1.8rem;
+    height: 40px;
+    margin: 10px auto 0;
+}
+
+#submit_button:hover {
+    color: #51109e;
+    font-size: 2.2rem;
+    transition: .2s;
+}
+
+
+/*confirm.php---------------*/
+
+#confirm-container .answer {
+    font-size: 1.6rem;
+    font-family: 'Sawarabi Gothic', 'Yu Gothic UI', YuGothic, 'Yu Gothic', 'ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', sans-serif;
+}
+
+#confirm-container {
+    margin: 100px auto 0;
+    max-width: 450px;
+    padding: 5px;
+}
+
+#confirm-title {
+    color: #272727;
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: 'Maven Pro', sans-serif;
+    margin-bottom: 50px;
+}
+
+#confirm-title2 {
+    background-color: #43ff43;
+    color: #272727;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Maven Pro', sans-serif;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+#confirm-text {
+    text-align: right;
+    font-family: 'Sawarabi Gothic', 'Yu Gothic UI', YuGothic, 'Yu Gothic', 'ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+#confirm-messege-box {
+    border: 2px solid #43ff43;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+#confirm-messege {
+    font-family: 'Sawarabi Gothic', 'Yu Gothic UI', YuGothic, 'Yu Gothic', 'ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+#confirm-message2 {
+    text-align: center;
+    font-family: 'Sawarabi Gothic', 'Yu Gothic UI', YuGothic, 'Yu Gothic', 'ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', sans-serif;
+    font-size: 1.6rem;
+    margin-bottom: 50px;
+}
+
+.confirm-box {
+    padding: 5px;
+    margin: 5px;
+    border-bottom: 2px solid #272727;
+}
+
+.input-confirm {
+    border: 3px solid #000;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+.input-confirm a {
+    color: #000;
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: 'Maven Pro', sans-serif;
+    line-height: 40px;
+}
+
+.input-confirm a:hover {
+    color: #34125c;
+    font-size: 2.2rem;
+    transition: .2s;
+}
+
+
+/*contact--------------------------------end*/
+
+/*works.php---------------------------------*/
+
+#works-page-menu {
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    top: 0;
+    height: 65px;
+    line-height: 65px;
+    background-color: #eee;
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+#works-page-menu-container {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+#works-page-menu-container a {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+#return-button {
+    text-align: left;
+    padding-left: 20px;
+    width: 60%;
+}
+
+#return-button a {
+    background-color: #fff;
+    border: 3px solid #000;
+    color: #000;
+    padding: 3px 17px;
+    font-size: 2.3rem;
+    transition: .3s;
+}
+
+#return-button a:hover {
+    color: #43ff43;
+    transition: .3s;
+}
+
+.works-page-button {
+    width: 20%;
+}
+
+.works-page-button a {
+    color: #000;
+}
+
+.works-page-button a:hover {
+    color: #4e188d;
+}
+
+.works-page-container {
+    display: flex;
+}
+
+.works-page-container .box {
+    max-width: 45%;
+}
+
+.works-page-container .box2 {
+    max-width: 45%;
+}
+
+.works-page-container .work-set {
+    padding: 2%;
+    margin-bottom: 100px;
+}
+
+.works-page-box1 {
+    /*    border: 1px solid red;*/
+    border-radius: 6px;
+    background-color: #fff;
+    margin: 1%;
+    width: 50%;
+}
+
+.works-page-box2 {
+    /*    border: 1px solid red;*/
+    border-radius: 6px;
+    background-color: #fff;
+    margin: 1%;
+    width: 50%;
+}
+
+#woks-page-back {
+    background-color: rgba(0, 0, 0, 0.016);
+}
+
+#woks-page-back #main-container {
+    margin-top: 80px;
+}
+
+#woks-page-back .title-name {
+    text-align: center;
+    border-bottom: 2px solid #1f1f1f;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+}
+
+#banner-container .box {
+    border: none;
+    box-shadow: none;
+}
+
+#banner-container .box2 {
+    border: none;
+    box-shadow: none;
+}
+
+/*works.php------------------------------end*/
+
+/*other-------------------------------------*/
+
+.small-descripton {
+    width: 50%;
+    padding-bottom: 5px;
+    font-family: 'Sawarabi Gothic', 'Yu Gothic UI', YuGothic, 'Yu Gothic', 'ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', sans-serif;
+}
+
+.title-center {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #eee;
+    height: 65px;
+    line-height: 65px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#copyright {
+    text-align: right;
+    margin-right: 70px;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.br-sp2 {
+    display: none;
+}
+
+.item {
+    width: 50%;
+    height: 50%;
+    margin-top: 40px;
+}
+
+
+/*responsive---------------------------*/
+
+@media screen and (max-width: 1346px) {
+    #about-set {
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    #about-set {
+        max-width: 80%;
+    }
+    .works-page-container .box {
+        max-width: 43%;
+    }
+    .works-page-container .box2 {
+        max-width: 43%;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    #about-set {
+        max-width: 87%;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    #profile-img {
+        float: none;
+        margin-left: auto;
+        margin-right: auto
+    }
+    #profile-sentence {
+        float: none;
+    }
+    .box {
+        width: 95%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+    .box2 {
+        width: 95%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+    .works-page-container .box {
+        float: left;
+    }
+    .works-page-container .box2 {
+        float: right;
+    }
+    .works-page-container {
+        display: block;
+    }
+    .works-page-box1 {
+        width: 100%;
+    }
+    .works-page-box2 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .frame {
+        border-left: 55px solid #eee;
+        border-right: 55px solid #eee;
+    }
+    .top-nav-menu {
+        height: 55px;
+        line-height: 55px;
+    }
+    footer {
+        height: 55px;
+        line-height: 55px;
+    }
+    #main-container {
+        margin-top: 80px;
+    }
+    #about-container {
+        margin-top: 100px;
+    }
+    #about-container .title-center {
+        margin-bottom: 0;
+    }
+    #top-title-svg {
+        max-width: 100%;
+    }
+    .work-set {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #confirm-title2 {
+        font-size: 2.6rem;
+        padding: 5px;
+    }
+    .profile-description .br-sp {
+        display: none;
+    }
+    .br-sp2 {
+        display: block;
+    }
+    .works-page-container {
+        width: 100%;
+    }
+    .works-page-container .box {
+        float: none;
+        max-width: 100%;
+    }
+    .works-page-container .box2 {
+        float: none;
+        max-width: 100%;
+    }
+    #woks-page-back #main-container {
+        margin-top: 50px;
+    }
+
+}
+
+body {
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.animated-text {
+    stroke: #000;
+    stroke-width: 2px;
+    fill: none;
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+    animation: draw 5s linear infinite;
+}
+
+@keyframes draw {
+    from {
+        stroke-dasharray: 0, 100;
+        stroke-dashoffset: 100;
+    }
+
+    to {
+        stroke-dasharray: 100, 0;
+        stroke-dashoffset: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .top-nav-menu {
+        height: 45px;
+        line-height: 45px;
+    }
+    .frame {
+        border-left: 25px solid #eee;
+        border-right: 25px solid #eee;
+    }
+    footer {
+        height: 25px;
+        line-height: 25px;
+    }
+    .yajirusi {
+        padding-left: 10%;
+    }
+    #about-container {
+        margin-top: 60px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    #copyright {
+        text-align: center;
+        margin-right: 0;
+        font-size: 10px;
+    }
+    .title-name {
+        text-align: center;
+        font-size: 2.3rem;
+    }
+    .title-name-works {
+        padding-left: 0;
+    }
+    #contact-container {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #confirm-messege-box {
+        border: 2px solid #43ff43;
+        padding: 2px;
+        margin-bottom: 30px;
+    }
+    #confirm-messege {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .work-name {
+        font-size: 1.8rem;
+    }
+    .description p {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    .work-set {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #about-set {
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+    }
+    #return-button {
+        width: 50%;
+    }
+    .works-page-button .yajirusi {
+        padding: 0 26px 0 0;
+    }
+    .works-page-button {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .top-nav-menu nav ul li a {
+        font-size: 1.6rem;
+    }
+    .yajirusi {
+        padding: 0 2.2em 0 0;
+    }
+    .top-nav-menu nav ul li {
+        padding-left: 0;
+    }
+    #confirm-title2 {
+        font-size: 2rem;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    #my-name {
+        font-size: 1.7rem;
+        border-bottom: 2px solid #8d8d8d;
+    }
+    .profile-description {
+        line-height: 2rem;
+    }
+}
