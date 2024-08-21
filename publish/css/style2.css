@@ -116,7 +116,7 @@ img {
 
 .top-nav-menu nav ul {
     overflow: hidden;
-    float: right;
+    width: 100%;
 }
 
 .top-nav-menu nav ul li {
