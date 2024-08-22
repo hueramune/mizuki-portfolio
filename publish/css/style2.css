@@ -313,7 +313,7 @@ img {
 
 #profile-sentence {
     color: #333;
-    float: right;
+    /* float: right; */
     margin: 10px auto;
     font-family: 'Sawarabi Gothic', 'Yu Gothic UI', YuGothic, 'Yu Gothic', 'ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', sans-serif;
 }
